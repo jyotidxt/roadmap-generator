@@ -297,7 +297,7 @@ const App = () => {
     };
 
     // key
-    const apiKey = "AIzaSyCyuGKKke38LcRMh-5ZG2ayiwZB5lqVYwA"; 
+  const apiKey = import.meta.env.VITE_GEMINI_KEY
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
 
     for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
